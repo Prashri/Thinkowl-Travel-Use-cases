@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkOwl | Airline & OTA Use Cases</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sidebar-item.active {
+            background-color: #e0f2fe; /* light blue */
+            color: #0c4a6e; /* dark blue */
+            font-weight: 600;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        /* For custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <div class="flex h-screen bg-white">
+        <!-- Sidebar -->
+        <aside class="w-80 h-full bg-slate-100 border-r border-slate-200 flex-shrink-0 overflow-y-auto">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold text-cyan-700">ThinkOwl Use Cases</h1>
+                <p class="text-sm text-slate-500 mt-1">For Airlines & OTAs</p>
+            </div>
+            <nav id="sidebar-nav" class="px-4 pb-6 space-y-1">
+                <a href="#use-case-1" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Refunds & Cancellations</a>
+                <a href="#use-case-2" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Peak Disruption Surge Control</a>
+                <a href="#use-case-3" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">B2B/Corporate Travel</a>
+                <a href="#use-case-4" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Omnichannel Vernacular Support</a>
+                <a href="#use-case-5" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Cross-Channel Context</a>
+                <a href="#use-case-6" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Supplier Dependency</a>
+                <a href="#use-case-7" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">ACW & Data Entry Eradication</a>
+                <a href="#use-case-8" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Refund SOP Enforcement</a>
+                <a href="#use-case-9" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">NDC & Rich Content Support</a>
+                <a href="#use-case-10" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Proactive Service</a>
+                <a href="#use-case-11" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Superapp-Grade Self-Serve</a>
+                <a href="#use-case-12" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">CX Economics & Governance</a>
+                <a href="#use-case-13" class="sidebar-item flex items-center px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200">Agentic AI Guardrails</a>
+                <a href="#demo-script" class="sidebar-item flex items-center mt-4 px-4 py-2 text-sm text-slate-700 rounded-md hover:bg-slate-200 transition-colors duration-200 font-semibold bg-white shadow-sm border border-slate-200">10-Minute Demo Script</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto">
+            <div id="content-container" class="p-6 md:p-10">
+
+                <!-- Use Case 1: Refunds and Cancellations -->
+                <section id="use-case-1" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Refunds and Cancellations Hyper-Automation</h2>
+                    <p class="mt-2 text-slate-600">Compliance-First automation for complex travel refunds.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-slate-700">
+                                <li>Variable airline fare rules, no-show windows, GST/VAT complexity.</li>
+                                <li>Refund dependency on airlines leading to 15–20+ business day delays.</li>
+                                <li>Ministry-mandated SOPs require auditable timelines; high repeat contacts.</li>
+                            </ul>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                             <ul class="list-disc list-inside mt-2 space-y-1 text-slate-700">
+                                <li>Revenue at risk due to churn; operational drag; regulatory exposure.</li>
+                                <li>Spikes during irregular ops overwhelm agents and inflate QRT.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <!-- Workflow steps here -->
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="inbox" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Intake & Categorization</h4>
+                                        <p class="text-sm text-slate-600">Unified inbox ingests requests, auto-tags "Refund/Cancel."</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="database-zap" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Data Extraction</h4>
+                                        <p class="text-sm text-slate-600">Auto-populates PNR, fare class, timestamps, GSTIN.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Automation Engine</h4>
+                                        <p class="text-sm text-slate-600">Runs refund calculator, validates eligibility, builds audit trail.</p>
+                                    </div>
+                                </div>
+                                 <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="plug-zap" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Integrations & CX</h4>
+                                        <p class="text-sm text-slate-600">Syncs with payment gateways and airline APIs; sends auto-updates to customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">≥99.9%</p>
+                                <p class="text-sm text-emerald-700">Refund Accuracy</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-90%</p>
+                                <p class="text-sm text-emerald-700">Processing Time</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">&lt;2 hours</p>
+                                <p class="text-sm text-emerald-700">Status QRT</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">100%</p>
+                                <p class="text-sm text-emerald-700">SOP Adherence</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Use Case 2: Peak Disruption Surge Control -->
+                <section id="use-case-2" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Peak Disruption Surge Control</h2>
+                    <p class="mt-2 text-slate-600">Managing massive influx of cases during fog, ATC, or ground op disruptions.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">250%+ surge in cancellations and re-accommodations; QRT spikes to 6.8 hours.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                             <p class="mt-2 text-slate-700">Queue blowouts, poor CSAT, agent burnout, social escalations.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="radar" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Detection</h4>
+                                        <p class="text-sm text-slate-600">Flight status feed triggers "Disruption Mode" event.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="message-circle-question" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Deflection</h4>
+                                        <p class="text-sm text-slate-600">AI Chatbots auto-handle standard rebook/cancel/refund flows.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="send" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Proactive Outreach</h4>
+                                        <p class="text-sm text-slate-600">Bulk WhatsApp/Email to impacted PNRs with self-serve links.</p>
+                                    </div>
+                                </div>
+                                 <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="ticket" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Prioritization</h4>
+                                        <p class="text-sm text-slate-600">Auto-opens cases for impacted PNRs with full context and routes to war-room queue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">60-80%</p>
+                                <p class="text-sm text-emerald-700">Automated Handling</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">&lt;2 hours</p>
+                                <p class="text-sm text-emerald-700">QRT Contained</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">25-40%</p>
+                                <p class="text-sm text-emerald-700">Inbound Reduction</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Stable</p>
+                                <p class="text-sm text-emerald-700">CSAT</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Use Case 3: B2B/Corporate Travel Case Orchestration -->
+                <section id="use-case-3" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">B2B/Corporate Travel Case Orchestration</h2>
+                    <p class="mt-2 text-slate-600">Managing complex, policy-compliant resolutions for corporate accounts.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Cross-functional handoffs (Finance/Ops) for resolutions and correct invoicing.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">SLA misses on key accounts, invoice errors, and executive escalations.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="tag" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Intake</h4>
+                                        <p class="text-sm text-slate-600">Account-tier tagging and custom fields (GSTIN, cost center).</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Orchestration</h4>
+                                        <p class="text-sm text-slate-600">Case Tasks and Templates for manager approvals, re-invoicing, compliance checks.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="clock" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">SLAs</h4>
+                                        <p class="text-sm text-slate-600">Tier-based SLA Policies; Supervisor escalation to Account Manager.</p>
+                                    </div>
+                                </div>
+                                 <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="plug-zap" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Integrations</h4>
+                                        <p class="text-sm text-slate-600">ERP/Finance for tax and invoicing; HRIS for approver directories.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">+10-20%</p>
+                                <p class="text-sm text-emerald-700">FCR for Corporate</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">≤60 mins</p>
+                                <p class="text-sm text-emerald-700">Top-Tier QRT</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">≥98%</p>
+                                <p class="text-sm text-emerald-700">Invoice Accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Use Case 4: Omnichannel Vernacular Support at Scale -->
+                <section id="use-case-4" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Omnichannel Vernacular Support at Scale</h2>
+                    <p class="mt-2 text-slate-600">Delivering consistent, high-quality support in regional languages.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Tier II/III customers prefer WhatsApp/regional languages; inconsistency across channels.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Slow responses, low FCR, and missed loyalty in regional segments.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="messages-square" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Intake</h4>
+                                        <p class="text-sm text-slate-600">WhatsApp, social, email into Unified Inbox; language detection + categorization.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="languages" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Assist</h4>
+                                        <p class="text-sm text-slate-600">Smart Responses and AI Suggestions with tone presets; multilingual KB variants.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="smile" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Feedback</h4>
+                                        <p class="text-sm text-slate-600">In-channel CSAT; Topic Analysis by language/region.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">&lt;10 mins</p>
+                                <p class="text-sm text-emerald-700">WhatsApp First Response</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">+15-25%</p>
+                                <p class="text-sm text-emerald-700">FCR</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Uplift</p>
+                                <p class="text-sm text-emerald-700">CSAT in Vernacular Cohorts</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Use Case 5: Cross-Channel Context Carryover -->
+                <section id="use-case-5" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Cross-Channel Context Carryover</h2>
+                    <p class="mt-2 text-slate-600">Providing true omnichannel handoffs without repetition.</p>
+                     <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Customers repeat context when moving from bot-to-human or chat-to-voice; AHT spikes.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Low CSAT, increased handling costs, and agent frustration.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="user-square-2" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Unified Customer Profile</h4>
+                                        <p class="text-sm text-slate-600">Shows bot transcript, prior contacts, transactional data in one ticket.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="route" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Contextual Routing</h4>
+                                        <p class="text-sm text-slate-600">Automated Case Routing preserves context; same-team continuity rules.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Bot Logging</h4>
+                                        <p class="text-sm text-slate-600">Conversation Bot writes all field values and decisions into the case.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-15-30%</p>
+                                <p class="text-sm text-emerald-700">AHT on Escalations</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-50%+</p>
+                                <p class="text-sm text-emerald-700">Repetition Complaints</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Increase</p>
+                                <p class="text-sm text-emerald-700">Escalated-Case FCR</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Continue for all other sections -->
+                <section id="use-case-6" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Supplier Dependency Transparency</h2>
+                    <p class="mt-2 text-slate-600">Isolating and managing supplier-side delays effectively.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">OTA blamed for supplier delays; internal confusion on status; repeat status checks.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Brand damage, avoidable contact volume, and poor supplier management.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="database-zap" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Enrichment</h4>
+                                        <p class="text-sm text-slate-600">Supplier status fields (refund queue, NDC status) pulled into the ticket.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="pie-chart" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Analytics</h4>
+                                        <p class="text-sm text-slate-600">Discover splits "Pending with OTA vs Supplier"; breach alerts by supplier.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="siren" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Escalations</h4>
+                                        <p class="text-sm text-slate-600">Supervisor Rules for supplier-side SLA breaches; auto-generated exec briefings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-30-40%</p>
+                                <p class="text-sm text-emerald-700">Repeat Contacts</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Faster</p>
+                                <p class="text-sm text-emerald-700">Issue Resolution</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Improved</p>
+                                <p class="text-sm text-emerald-700">Supplier Accountability</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="use-case-7" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">ACW and Data Entry Eradication</h2>
+                     <p class="mt-2 text-slate-600">Decimating AHT by eliminating manual after-call work.</p>
+                     <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">After-Call Work due to manual data lookups and duplicate entries.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Higher AHT, limited agent capacity, and inconsistency/errors.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="scan-text" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Extraction</h4>
+                                        <p class="text-sm text-slate-600">Automatic Data Extraction for PNR, fare class, invoice, travel dates.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="lightbulb" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Guidance</h4>
+                                        <p class="text-sm text-slate-600">Intelligent Suggestions with next-best actions, policy snippets, macros.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="repeat" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Sync</h4>
+                                        <p class="text-sm text-slate-600">Two-way integrations to pre-populate and write-back CRM/ERP fields.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-30-50%</p>
+                                <p class="text-sm text-emerald-700">Handle Time</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-70%+</p>
+                                <p class="text-sm text-emerald-700">ACW Minutes</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-80%+</p>
+                                <p class="text-sm text-emerald-700">Data Errors</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-8" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Refund SOP Enforcement and Auditability</h2>
+                     <p class="mt-2 text-slate-600">Ensuring regulatory compliance with tamper-proof processes.</p>
+                     <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Ministry-mandated SOP timelines; need tamper-proof compliance artifacts.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Penalties, audits, and reputational risk.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="clipboard-check" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Checkpoints</h4>
+                                        <p class="text-sm text-slate-600">SOP Compliance with timestamped milestones and alerts.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Governance</h4>
+                                        <p class="text-sm text-slate-600">Knowledge Content Versioning for published policies.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="file-spreadsheet" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Evidence</h4>
+                                        <p class="text-sm text-slate-600">Discover CSV exports for regulator-ready audits.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">100%</p>
+                                <p class="text-sm text-emerald-700">SOP Adherence</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Minutes</p>
+                                <p class="text-sm text-emerald-700">Audit Prep Time</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Zero</p>
+                                <p class="text-sm text-emerald-700">Fines</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-9" class="content-section">
+                     <h2 class="text-3xl font-bold text-slate-900">NDC and Rich Content Support Ticketing</h2>
+                     <p class="mt-2 text-slate-600">Simplifying after-sales service for mixed EDIFACT/NDC content.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Mixed EDIFACT/NDC content complicates serviceability and ancillaries.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Confusion, longer handling times, and repeat contacts.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="plug-zap" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Integration</h4>
+                                        <p class="text-sm text-slate-600">NDC APIs pull orders, ancillaries, serviceability rules into ticket fields.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="search" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Analysis</h4>
+                                        <p class="text-sm text-slate-600">Topic Analysis to identify recurrent NDC/EDIFACT friction patterns.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="file-check-2" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Normalization</h4>
+                                        <p class="text-sm text-slate-600">Common custom field schema for agent simplicity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-20-30%</p>
+                                <p class="text-sm text-emerald-700">Ancillary-Related Contacts</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Increase</p>
+                                <p class="text-sm text-emerald-700">FCR on NDC Issues</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Decrease</p>
+                                <p class="text-sm text-emerald-700">AHT</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-10" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Proactive Service for Physical Disruptions</h2>
+                     <p class="mt-2 text-slate-600">Getting ahead of ground ops failures before they become digital backlogs.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Ground ops failures cause sudden digital backlogs; customers contact before OTA reacts.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Loss of control, social blow-ups, and high cost-to-serve spikes.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="rss" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Feeds</h4>
+                                        <p class="text-sm text-slate-600">Ops/airport/handler APIs into Real-Time Dashboards; auto-open tickets.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="send" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Outreach</h4>
+                                        <p class="text-sm text-slate-600">Bulk messaging with re-accommodation/compensation options.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="shield-alert" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Governance</h4>
+                                        <p class="text-sm text-slate-600">Handler SLA breach alerts and reporting.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">&gt;70%</p>
+                                <p class="text-sm text-emerald-700">Proactive Outreach</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">-25-40%</p>
+                                <p class="text-sm text-emerald-700">Inbound Reduced</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Uplift</p>
+                                <p class="text-sm text-emerald-700">Post-Event NPS</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-11" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Superapp-Grade Self-Serve with Smart Escalation</h2>
+                     <p class="mt-2 text-slate-600">Managing complex escalations from self-service channels.</p>
+                     <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">80% simple tasks deflected online; remaining 20% are complex and expensive without context.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">High AHT/low FCR on escalations; agent inconsistency.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Bot-first</h4>
+                                        <p class="text-sm text-slate-600">AI Chatbots complete standard flows; escalate with full context.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="list-checks" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Guardrails</h4>
+                                        <p class="text-sm text-slate-600">Guided Mode checklists and policy validations for agents.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="book" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Feedback</h4>
+                                        <p class="text-sm text-slate-600">"Self-serve failed reason" logged to Discover for UX/bot improvements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Decrease</p>
+                                <p class="text-sm text-emerald-700">Cost-to-Serve</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Reduction</p>
+                                <p class="text-sm text-emerald-700">Escalated-Case QRT</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Increase</p>
+                                <p class="text-sm text-emerald-700">Policy Compliance</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-12" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">CX Economics and Accountable Governance</h2>
+                    <p class="mt-2 text-slate-600">Connecting CX data to financial outcomes for cross-functional accountability.</p>
+                     <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">Fragmented data hides true QRT/FCR drivers; weak cross-functional accountability.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Misallocated spend, persistent bottlenecks, and CFO pushback.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                             <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="layout-dashboard" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Executive Discover</h4>
+                                        <p class="text-sm text-slate-600">QRT by segment, refund aging, cost-to-serve by intent, sentiment trends.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Coaching</h4>
+                                        <p class="text-sm text-slate-600">Faceted filters to agent/team; Supervisor Rules for targeted enablement.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="calendar" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Cadence</h4>
+                                        <p class="text-sm text-slate-600">Weekly CX/Finance/Ops governance with top 3 action items.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">&lt;2 hours</p>
+                                <p class="text-sm text-emerald-700">QRT on Targeted Intents</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">+10-15%</p>
+                                <p class="text-sm text-emerald-700">FCR</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Predictable</p>
+                                <p class="text-sm text-emerald-700">Cost-to-Serve Trajectory</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="use-case-13" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">Agentic AI Guardrails</h2>
+                    <p class="mt-2 text-slate-600">Deploying risk-controlled generative AI for safe, scalable support.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h3 class="font-semibold text-lg text-rose-700 flex items-center"><i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>Problem</h3>
+                            <p class="mt-2 text-slate-700">GenAI hallucinations on policies/visas can create liability; need scale without risk.</p>
+                            <h3 class="font-semibold text-lg text-amber-700 mt-6 flex items-center"><i data-lucide="trending-down" class="w-5 h-5 mr-2"></i>Impact</h3>
+                            <p class="mt-2 text-slate-700">Compliance breaches, financial exposure, and trust erosion.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="workflow" class="w-5 h-5 mr-2"></i>ThinkOwl Workflow Visualization</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="book-check" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Grounded Suggestions</h4>
+                                        <p class="text-sm text-slate-600">Intelligent Suggestions trained on approved KB/policies with citations.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Safeguards</h4>
+                                        <p class="text-sm text-slate-600">Supervisor Rules flag risky intents (visa/medical) for human validation; no auto-send.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-5"><i data-lucide="arrow-down" class="w-5 h-5 text-slate-400"></i></div>
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0 bg-sky-100 text-sky-700 rounded-full p-2"><i data-lucide="history" class="w-5 h-5"></i></div>
+                                    <div>
+                                        <h4 class="font-semibold">Versioning</h4>
+                                        <p class="text-sm text-slate-600">Policy “truth set” with content version control; change logs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="mt-8">
+                        <h3 class="font-semibold text-lg text-emerald-700 flex items-center"><i data-lucide="bar-chart-2" class="w-5 h-5 mr-2"></i>Key Metrics & Outcomes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Zero</p>
+                                <p class="text-sm text-emerald-700">Critical Misinformation Incidents</p>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">≥50%</p>
+                                <p class="text-sm text-emerald-700">AI Assist Rate on Drafting</p>
+                            </div>
+                             <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-bold text-emerald-800">Eliminated</p>
+                                <p class="text-sm text-emerald-700">Compliance Incidents</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Demo Script -->
+                <section id="demo-script" class="content-section">
+                    <h2 class="text-3xl font-bold text-slate-900">10-Minute Demo Script</h2>
+                    <p class="mt-2 text-slate-600">Fog-Disruption Surge with Refund Automation and WhatsApp Outreach</p>
+
+                    <div class="mt-8 bg-white p-6 rounded-xl border border-slate-200">
+                        <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-4"><i data-lucide="target" class="w-5 h-5 mr-2"></i>Objective & Audience</h3>
+                        <p class="text-slate-700">Demonstrate how ThinkOwl detects a fog disruption, contains surge via proactive outreach and bot deflection, automates refunds with SOP compliance, and preserves QRT under 2 hours.</p>
+                        <p class="mt-2 text-sm text-slate-500"><b>Audience:</b> Head of CX/Support, VP Ops, CIO/IT, Finance Controller, Product Lead.</p>
+                    </div>
+
+                    <div class="mt-8">
+                         <h3 class="font-semibold text-lg text-sky-800 flex items-center mb-6"><i data-lucide="gantt-chart-square" class="w-5 h-5 mr-2"></i>Timeboxed Demo Flow</h3>
+                         <!-- Vertical Timeline -->
+                         <div class="relative pl-6 border-l-2 border-slate-200">
+                            <!-- Item 1 -->
+                            <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 0:00 - 0:30</p>
+                                    <h4 class="font-bold mt-1">Frame the Scenario</h4>
+                                    <p class="text-slate-600 mt-1">"Dense fog hits DEL. Inbound spike typically +250%. Goal: QRT under 2 hours, automated refunds, proactive comms to reduce inbound by 30%+.”</p>
+                                </div>
+                            </div>
+                             <!-- Item 2 -->
+                            <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 0:30 - 2:00</p>
+                                    <h4 class="font-bold mt-1">Detection and Disruption Mode</h4>
+                                    <ul class="list-disc list-inside mt-1 space-y-1 text-slate-600">
+                                        <li>Show Discover live tile: spike detected from flight status feed.</li>
+                                        <li>Event Trigger activates "Disruption Mode":
+                                            <ul class="list-['-_'] list-inside ml-4">
+                                                <li>Auto-opens cases for impacted PNRs.</li>
+                                                <li>Routing overrides prioritize disruption queue.</li>
+                                                <li>Supervisor Rule alerts war-room.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <!-- Item 3 -->
+                             <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 2:00 - 4:00</p>
+                                    <h4 class="font-bold mt-1">Proactive WhatsApp Outreach and Self-Serve</h4>
+                                     <ul class="list-disc list-inside mt-1 space-y-1 text-slate-600">
+                                        <li>Bulk Messaging to impacted cohort (show multilingual variant).</li>
+                                        <li>AI Chatbot handles standard rebook/cancel requests (show bot flow).</li>
+                                        <li class="font-medium text-emerald-700">Outcome: 60-80% deflection of standard requests.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <!-- Item 4 -->
+                             <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 4:00 - 6:30</p>
+                                    <h4 class="font-bold mt-1">Refund Automation and SOP Compliance</h4>
+                                    <ul class="list-disc list-inside mt-1 space-y-1 text-slate-600">
+                                        <li>Open complex refund case: Show auto data extraction, refund calculator, airline status polling.</li>
+                                        <li>Highlight visible SOP timers and checkpoints.</li>
+                                        <li>Show customer transparency via auto-updates.</li>
+                                        <li>Display immutable audit trail in case timeline.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <!-- Item 5 -->
+                             <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 7:30 - 8:30</p>
+                                    <h4 class="font-bold mt-1">Agent Experience and ACW Elimination</h4>
+                                    <ul class="list-disc list-inside mt-1 space-y-1 text-slate-600">
+                                        <li>Show escalated ticket with full context from bot/prior messages.</li>
+                                        <li>Demonstrate Intelligent Suggestions proposing next-best actions.</li>
+                                        <li class="font-medium text-emerald-700">Outcome: No free typing, all fields pre-populated, ACW near-zero.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                             <div class="mb-10">
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 8:30 - 9:30</p>
+                                    <h4 class="font-bold mt-1">Results Dashboard and Metrics</h4>
+                                    <ul class="list-disc list-inside mt-1 space-y-1 text-slate-600">
+                                        <li>Show live KPIs: QRT < 2 hours, bot deflection rate, 100% SOP adherence.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div>
+                                <div class="absolute -left-3.5 mt-1.5 w-6 h-6 bg-sky-500 rounded-full border-4 border-white"></div>
+                                <div class="pl-4">
+                                    <p class="text-sky-600 font-semibold text-sm">Minute 9:30 - 10:00</p>
+                                    <h4 class="font-bold mt-1">Close and Next Steps</h4>
+                                    <p class="text-slate-600 mt-1">"From detection to refund automation in minutes. Next: pilot 'Instant OTA Credit' for low-risk refunds..."</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+
+            const navLinks = document.querySelectorAll('#sidebar-nav a');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            function updateContent(hash) {
+                // Remove active class from all links and sections
+                navLinks.forEach(link => link.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+
+                // Find the target link and section
+                const targetLink = document.querySelector(`a[href="${hash}"]`);
+                const targetSection = document.querySelector(hash);
+
+                if (targetLink && targetSection) {
+                    targetLink.classList.add('active');
+                    targetSection.classList.add('active');
+                }
+            }
+
+            // Handle navigation clicks
+            const sidebarNav = document.getElementById('sidebar-nav');
+            sidebarNav.addEventListener('click', function(e) {
+                const link = e.target.closest('a');
+                if (link) {
+                    e.preventDefault();
+                    const hash = link.getAttribute('href');
+                    history.pushState(null, null, hash); // Update URL without reloading
+                    updateContent(hash);
+                }
+            });
+
+            // Handle back/forward browser buttons
+            window.addEventListener('popstate', function() {
+                updateContent(window.location.hash || '#use-case-1');
+            });
+
+            // Set initial state based on URL hash or default to first item
+            const initialHash = window.location.hash || '#use-case-1';
+            updateContent(initialHash);
+
+        });
+    </script>
+</body>
+</html>
+
